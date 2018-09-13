@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-.box {
-  position: relative;
-  width: 500px;
-  margin: auto;
-  height: 500px;
-}
-
 .dough {
   width: 100%;
   height: 100%;
@@ -49,47 +42,47 @@
   border-radius: 50%;
 }
 
-.sal-1{
+.sal1{
   top: 10%;
   left: 25%;
 }
-.sal-2{
+.sal2{
   top: 30%;
   left: 15%;
 }
-.sal-3{
+.sal3{
   top: 32%;
   left: 40%;
 }
-.sal-4{
+.sal4{
   top: 12%;
   left: 56%;
 }
-.sal-5{
+.sal5{
   top: 34%;
   left: 70%;
 }
-.sal-6{
+.sal6{
   top: 56%;
   left: 72%;
 }
-.sal-7{
+.sal7{
   top: 75%;
   left: 50%;
 }
-.sal-8{
+.sal8{
   top: 50%;
   left: 50%;
 }
-.sal-9{
+.sal9{
   top: 55%;
   left: 30%;
 }
-.sal-10{
+.sal10{
   top: 50%;
   left: 10%;
 }
-.sal-11{
+.sal11{
   top: 76%;
   left: 28%;
 }
@@ -119,47 +112,47 @@
   border-top-right-radius: 50%;
 }
 
-.mushroom-1{
+.mushroom1{
   top: 10%;
   left: 40%;
   transform: rotate(63deg);
 }
-.mushroom-2{
+.mushroom2{
   top: 27%;
   left: 22%;
   transform: rotate(-43deg);
 }
-.mushroom-3{
+.mushroom3{
   top: 35%;
   left: 46%;
   transform: rotate(34deg);
 }
-.mushroom-4{
+.mushroom4{
   top: 24%;
   left: 70%;
   transform: rotate(87deg);
 }
-.mushroom-5{
+.mushroom5{
   top: 53%;
   left: 72%;
   transform: rotate(-31deg);
 }
-.mushroom-6{
+.mushroom6{
   top: 14%;
   left: 65%;
   transform: rotate(-20deg);
 }
-.mushroom-7{
+.mushroom7{
   top: 70%;
   left: 63%;
   transform: rotate(40deg);
 }
-.mushroom-8{
+.mushroom8{
   top: 64%;
   left: 38%;
   transform: rotate(-46deg);
 }
-.mushroom-9{
+.mushroom9{
   top: 57%;
   left: 12%;
   transform: rotate(53deg);
@@ -173,51 +166,51 @@
   border-radius: 50%;
 }
 
-.corn-1 {
+.corn1 {
   top: 10%;
   left: 43%;
 }
-.corn-2 {
+.corn2 {
   top: 13%;
   left: 61%;
 }
-.corn-3 {
+.corn3 {
   top: 35%;
   left: 20%;
 }
-.corn-4 {
+.corn4 {
   top: 34%;
   left: 57%;
 }
-.corn-5 {
+.corn5 {
   top: 10%;
   left: 43%;
 }
-.corn-6 {
+.corn6 {
   top: 40%;
   left: 71%;
 }
-.corn-7 {
+.corn7 {
   top: 65%;
   left: 23%;
 }
-.corn-8 {
+.corn8 {
   top: 60%;
   left: 47%;
 }
-.corn-9 {
+.corn9 {
   top: 66%;
   left: 72%;
 }
-.corn-10 {
+.corn10 {
   top: 81%;
   left: 33%;
 }
-.corn-11 {
+.corn11 {
   top: 84%;
   left: 56%;
 }
-.corn-12 {
+.corn12 {
   top: 50%;
   left: 65%;
 }
@@ -229,63 +222,64 @@
   background-color: rgb(28, 131, 2);
 }
 
-.veg-1 {
+.veg1 {
   top: 20%;
   left: 30%;
   transform: rotate(43deg);
 }
-.veg-2 {
+.veg2 {
   top: 27%;
   left: 65%;
   transform: rotate(-20deg);
 }
-.veg-3 {
+.veg3 {
   top: 38%;
   left: 15%;
   transform: rotate(71deg);
 }
-.veg-4 {
+.veg4 {
   top: 40%;
   left: 52%;
   transform: rotate(-67deg);
 }
-.veg-5 {
+.veg5 {
   top: 56%;
   left: 87%;
   transform: rotate(110deg);
 }
-.veg-6 {
+.veg6 {
   top: 67%;
   left: 12%;
   transform: rotate(135deg);
 }
-.veg-7 {
+.veg7 {
   top: 87%;
   left: 50%;
   transform: rotate(72deg);
 }
-.veg-8 {
+.veg8 {
   top: 60%;
   left: 63%;
   transform: rotate(-43deg);
 }
-.veg-9 {
+.veg9 {
   top: 78%;
   left: 36%;
   transform: rotate(43deg);
 }
-.veg-10 {
+.veg10 {
   top: 65%;
   left: 37%;
   transform: rotate(-63deg);
 }
-.veg-11 {
+.veg11 {
   top: 34%;
   left: 80%;
   transform: rotate(120deg);
 }
-.veg-12 {
+.veg12 {
   top: 12%;
   left: 51%;
   transform: rotate(43deg);
+  color: #161616;
 } 
