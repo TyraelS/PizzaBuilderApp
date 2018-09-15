@@ -19,7 +19,6 @@ export default (props) => {
   if(transformedIngredients === 0) {
     transformedIngredients = <p>Please, add ingredients ;D</p>
   }
-  console.log(transformedIngredients);
   
   return (
     <div className = {classes.pizza}>
