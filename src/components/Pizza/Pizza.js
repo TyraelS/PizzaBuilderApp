@@ -10,9 +10,15 @@ export default (props) => {
   //       return <PizzaIngredient key = {igKey} type = {igKey} />
   //     });
   //   });
-  const transformedIngredients = props.ingredients.map((igKey) => (
+  let transformedIngredients = props.ingredients.map((igKey) => (
     <PizzaIngredient key={igKey} type={igKey} />
-  ))
+  ));
+  if(transformedIngredients.length === 0) {
+    transformedIngredients = <p>Start Putting Ingredients ;D</p>
+  }
+  if(transformedIngredients === 0) {
+    transformedIngredients = <p>Please, add ingredients ;D</p>
+  }
   console.log(transformedIngredients);
   
   return (
