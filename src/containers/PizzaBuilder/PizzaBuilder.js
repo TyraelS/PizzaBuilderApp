@@ -5,11 +5,11 @@ import Pizza from '../../components/Pizza/Pizza'
 
 export default class PizzaBuilder extends Component {
   state = {
-    ingredients: {
-      salamis: true,
-      corns: true,
-      mushrooms: true
-    }
+    ingredients: [
+      'salamis',
+      'vegs', 
+      'corns'
+    ]
   }
 
   render() {
