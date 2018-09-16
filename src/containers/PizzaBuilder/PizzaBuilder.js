@@ -77,11 +77,20 @@ export default class PizzaBuilder extends Component {
   purchaseCancelHandler =() => {
     this.setState({purchasing: false});
   }
+
+  purchaseContinueHandler =() => {
+    alert('You continue');
+  }
   render() {
     return (
       <Aux>
         <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
-          <OrderSummary ingredients = {this.state.ingredients} />
+          <OrderSummary 
+            ingredients = {this.state.ingredients} 
+            purchaseCancelled={this.purchaseCancelHandler}
+            purchaseContinued={this.purchaseContinueHandler}
+            price={this.state.totalPrice}
+            />
         </Modal>
         <Pizza ingredients={this.state.ingredients}/>
         <BuildControls
