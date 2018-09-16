@@ -1,7 +1,8 @@
 .BuildControls {
   width: 100%;
-  background: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fc4a1a, #f7b733); 
+  /* background: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #fc4a1a, #f7b733);  */
+  background: #FC4B1A;
   display: flex;
   flex-flow: column;
   align-items: center;
