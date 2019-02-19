@@ -10,16 +10,18 @@ export default (props) => {
   //       return <PizzaIngredient key = {igKey} type = {igKey} />
   //     });
   //   });
-  let transformedIngredients = props.ingredients.map((igKey) => (
-    <PizzaIngredient key={igKey} type={igKey} />
-  ));
-  if(transformedIngredients.length === 0) {
-    transformedIngredients = <p>Start Putting Ingredients ;D</p>
-  }
-  if(transformedIngredients === 0) {
-    transformedIngredients = <p>Please, add ingredients ;D</p>
-  }
-  
+  let transformedIngredients = Object.keys( props.ingredients )
+        .map( igKey => {
+            return [...Array( props.ingredients[igKey] )].map( ( _, i ) => {
+                return <PizzaIngredient key={igKey + i} type={igKey} />;
+            } );
+        } )
+        .reduce((arr, el) => {
+            return arr.concat(el)
+        }, []);
+    if (transformedIngredients.length === 0) {
+        transformedIngredients = <p>Please start adding ingredients!</p>;
+    }
   return (
     <div className = {classes.pizza}>
       <PizzaIngredient type='dough'/>

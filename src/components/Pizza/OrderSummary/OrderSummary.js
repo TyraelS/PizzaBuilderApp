@@ -6,10 +6,13 @@ import Button from '../../UI/Button/Button';
 class OrderSummary extends Component  {
   //This must be a functional component
   render() {
-    let ingredientSummary = this.props.ingredients;
-    ingredientSummary = ingredientSummary.map((ig) => {
-      return (<li key={ig}>{ig};</li>);
-    });
+    const ingredientSummary = Object.keys( this.props.ingredients )
+            .map( igKey => {
+                return (
+                    <li key={igKey}>
+                        <span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {this.props.ingredients[igKey]}
+                    </li> );
+            } );
     return (
       <div className={classes.OrderSummary}>
         <h3>Your Order</h3>
