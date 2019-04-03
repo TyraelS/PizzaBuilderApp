@@ -4,12 +4,6 @@ import classes from './Pizza.css';
 import PizzaIngredient from './PizzaIngredient/PizzaIngredient';
 
 export default (props) => {
-  // const transformedIngredients = Object.keys(props.ingredients)
-  //   .map(igKey => {
-  //     return [...Array(props.ingredients[igKey])].map((_) => {
-  //       return <PizzaIngredient key = {igKey} type = {igKey} />
-  //     });
-  //   });
   let transformedIngredients = Object.keys( props.ingredients )
         .map( igKey => {
             return [...Array( props.ingredients[igKey] )].map( ( _, i ) => {
