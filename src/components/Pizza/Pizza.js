@@ -14,7 +14,7 @@ export default (props) => {
             return arr.concat(el)
         }, []);
     if (transformedIngredients.length === 0) {
-        transformedIngredients = <p>Please start adding ingredients!</p>;
+        transformedIngredients = <p className = {classes.alert}>Please start adding ingredients!</p>;
     }
   return (
     <div className = {classes.pizza}>

@@ -7,8 +7,15 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
-p{
-  color: red;
+.alert{
+  display: block;
+  background-color: rgb(196, 134, 43);
+  border-radius: 10px;
+  position: absolute;
+  top: 45%;
+  left:10%;
+  width: 80%;
+  color: #fff;
   z-index: 50;
   margin: auto;
 }

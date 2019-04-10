@@ -6,3 +6,20 @@
   margin: 10px auto;
   box-sizing: border-box;
 }
+
+.item{
+  text-transform: capitalize;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  color: red;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+@media(min-width: 600px){
+  .item{
+    width: 180px;
+    margin: 0 8px;
+  }
+}
