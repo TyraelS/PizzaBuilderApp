@@ -6,11 +6,15 @@
   height: 11em;
   border-radius: 50%;
   background: #781818;
-  background: -moz-linear-gradient(left, #781818 10%, rgba(120,24,24, 0) 42%);
-  background: -webkit-linear-gradient(left, #781818 10%, rgba(120,24,24, 0) 42%);
-  background: -o-linear-gradient(left, #781818 10%, rgba(120,24,24, 0) 42%);
-  background: -ms-linear-gradient(left, #781818 10%, rgba(120,24,24, 0) 42%);
-  background: linear-gradient(to right, #781818 10%, rgba(120,24,24, 0) 42%);
+  background: -moz-linear-gradient(left, #781818 10%, rgba(120, 24, 24, 0) 42%);
+  background: -webkit-linear-gradient(
+    left,
+    #781818 10%,
+    rgba(120, 24, 24, 0) 42%
+  );
+  background: -o-linear-gradient(left, #781818 10%, rgba(120, 24, 24, 0) 42%);
+  background: -ms-linear-gradient(left, #781818 10%, rgba(120, 24, 24, 0) 42%);
+  background: linear-gradient(to right, #781818 10%, rgba(120, 24, 24, 0) 42%);
   position: relative;
   -webkit-animation: load3 1.4s infinite linear;
   animation: load3 1.4s infinite linear;

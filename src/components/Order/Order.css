@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.item{
+.item {
   text-transform: capitalize;
   display: block;
   width: 90%;
@@ -17,8 +17,8 @@
   padding: 5px;
 }
 
-@media(min-width: 600px){
-  .item{
+@media (min-width: 600px) {
+  .item {
     width: 180px;
     margin: 0 8px;
   }

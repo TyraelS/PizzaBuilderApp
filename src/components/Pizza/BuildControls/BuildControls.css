@@ -2,7 +2,7 @@
   width: 100%;
   /* background: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(to right, #fc4a1a, #f7b733);  */
-  background: #FC4B1A;
+  background: #fc4b1a;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .OrderButton {
-  background-color: rgb(255, 159, 42);;
+  background-color: rgb(255, 159, 42);
   outline: none;
   cursor: pointer;
   border: 1px solid #fff;
@@ -31,14 +31,15 @@
   transition: 0.2s ease-in-out;
 }
 
-.OrderButton:hover, .OrderButton:active {
+.OrderButton:hover,
+.OrderButton:active {
   background-color: rgb(35, 187, 30);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .OrderButton:disabled {
-  background-color: #C7C6C6;
+  background-color: #c7c6c6;
   cursor: not-allowed;
   border: 1px solid #ccc;
   color: #888888;
@@ -50,12 +51,12 @@
 
 @keyframes enable {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   60% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }

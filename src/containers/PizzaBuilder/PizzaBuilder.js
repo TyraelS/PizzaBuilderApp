@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Aux from "../../hoc/Auxil/Auxil";
-import Pizza from "../../components/Pizza/Pizza";
-import BuildControls from "../../components/Pizza/BuildControls/BuildControls";
-import Modal from "../../components/UI/Modal/Modal";
-import OrderSummary from "../../components/Pizza/OrderSummary/OrderSummary";
-import axios from "../../axios-orders";
-import Spinner from "../../components/UI/Spinner/Spinner";
-import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
+import Aux from '../../hoc/Auxil/Auxil';
+import Pizza from '../../components/Pizza/Pizza';
+import BuildControls from '../../components/Pizza/BuildControls/BuildControls';
+import Modal from '../../components/UI/Modal/Modal';
+import OrderSummary from '../../components/Pizza/OrderSummary/OrderSummary';
+import axios from '../../axios-orders';
+import Spinner from '../../components/UI/Spinner/Spinner';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 const INGREDIENT_PRICES = {
   salamis: 5,
@@ -26,12 +26,12 @@ class PizzaBuilder extends Component {
 
   componentDidMount() {
     axios
-      .get("https://pizza-builder-app.firebaseio.com/ingredients.json")
+      .get('https://pizza-builder-app.firebaseio.com/ingredients.json')
       .then(response => {
         this.setState({ ingredients: response.data });
       })
       .catch(error => {
-        this.setState({error: true});
+        this.setState({ error: true });
       });
   }
 
@@ -92,7 +92,7 @@ class PizzaBuilder extends Component {
       pathname: '/checkout',
       state: {
         ingredients: this.state.ingredients,
-        price: this.state.totalPrice,
+        price: this.state.totalPrice
       }
     });
   };
@@ -101,7 +101,11 @@ class PizzaBuilder extends Component {
     if (this.state.loading) {
       orderSummary = <Spinner />;
     }
-    let pizza = this.state.error?<p>Ingredients can't be loaded</p>:<Spinner />;
+    let pizza = this.state.error ? (
+      <p>Ingredients can't be loaded</p>
+    ) : (
+      <Spinner />
+    );
     if (this.state.ingredients) {
       pizza = (
         <Aux>
@@ -124,15 +128,14 @@ class PizzaBuilder extends Component {
         />
       );
     }
-    if(this.state.loading){
-      orderSummary = <Spinner/>;
+    if (this.state.loading) {
+      orderSummary = <Spinner />;
     }
     return (
       <Aux>
         <Modal
           show={this.state.purchasing}
-          modalClosed={this.purchaseCancelHandler}
-        >
+          modalClosed={this.purchaseCancelHandler}>
           {orderSummary}
         </Modal>
         {pizza}

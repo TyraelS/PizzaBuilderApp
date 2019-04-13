@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -6,11 +6,14 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #FFC61C;
-  border: 15px solid #E09B31;
+  background-color: #ffc61c;
+  border: 15px solid #e09b31;
 }
 
-.salamis, .mushrooms, .corns, .vegs{
+.salamis,
+.mushrooms,
+.corns,
+.vegs {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,117 +45,117 @@
   border-radius: 50%;
 }
 
-.sal1{
+.sal1 {
   top: 10%;
   left: 25%;
 }
-.sal2{
+.sal2 {
   top: 30%;
   left: 15%;
 }
-.sal3{
+.sal3 {
   top: 32%;
   left: 40%;
 }
-.sal4{
+.sal4 {
   top: 12%;
   left: 56%;
 }
-.sal5{
+.sal5 {
   top: 34%;
   left: 70%;
 }
-.sal6{
+.sal6 {
   top: 56%;
   left: 72%;
 }
-.sal7{
+.sal7 {
   top: 75%;
   left: 50%;
 }
-.sal8{
+.sal8 {
   top: 50%;
   left: 50%;
 }
-.sal9{
+.sal9 {
   top: 55%;
   left: 30%;
 }
-.sal10{
+.sal10 {
   top: 50%;
   left: 10%;
 }
-.sal11{
+.sal11 {
   top: 76%;
   left: 28%;
 }
 
-.mushrooms div{
+.mushrooms div {
   position: absolute;
   height: 15%;
   width: 10%;
 }
 
-.mushrooms div>.stem{
+.mushrooms div > .stem {
   position: absolute;
   bottom: 0;
   left: 35%;
   width: 30%;
   height: 60%;
-  background-color: #C3B5AE;
+  background-color: #c3b5ae;
 }
 
-.mushrooms div>.cup{
+.mushrooms div > .cup {
   position: absolute;
   top: 0;
   width: 100%;
   height: 40%;
-  background-color: #B49989;
+  background-color: #b49989;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
 
-.mushroom1{
+.mushroom1 {
   top: 10%;
   left: 40%;
   transform: rotate(63deg);
 }
-.mushroom2{
+.mushroom2 {
   top: 27%;
   left: 22%;
   transform: rotate(-43deg);
 }
-.mushroom3{
+.mushroom3 {
   top: 35%;
   left: 46%;
   transform: rotate(34deg);
 }
-.mushroom4{
+.mushroom4 {
   top: 24%;
   left: 70%;
   transform: rotate(87deg);
 }
-.mushroom5{
+.mushroom5 {
   top: 53%;
   left: 72%;
   transform: rotate(-31deg);
 }
-.mushroom6{
+.mushroom6 {
   top: 14%;
   left: 65%;
   transform: rotate(-20deg);
 }
-.mushroom7{
+.mushroom7 {
   top: 70%;
   left: 63%;
   transform: rotate(40deg);
 }
-.mushroom8{
+.mushroom8 {
   top: 64%;
   left: 38%;
   transform: rotate(-46deg);
 }
-.mushroom9{
+.mushroom9 {
   top: 57%;
   left: 12%;
   transform: rotate(53deg);
@@ -282,4 +285,4 @@
   left: 51%;
   transform: rotate(43deg);
   color: #161616;
-} 
+}

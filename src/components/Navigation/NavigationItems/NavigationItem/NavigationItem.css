@@ -6,8 +6,8 @@
   align-items: center;
 }
 
-.NavigationItem a{
-  color:#4D2B00;
+.NavigationItem a {
+  color: #4d2b00;
   text-decoration: none;
   width: 100%;
   box-sizing: border-box;
@@ -17,7 +17,7 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
-  color: #FC4B1A;
+  color: #fc4b1a;
 }
 
 @media (min-width: 500px) {
@@ -28,14 +28,14 @@
     width: auto;
     align-items: center;
   }
-  
-  .NavigationItem a{
+
+  .NavigationItem a {
     color: #fff;
     height: 100%;
     padding: 16px 10px;
     border-bottom: 4px solid transparent;
   }
-  
+
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
