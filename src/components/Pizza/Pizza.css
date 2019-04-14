@@ -29,15 +29,15 @@
 
 @media (min-width: 500px) and (min-height: 400px) {
   .pizza {
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
   }
 }
 
 @media (min-width: 500px) and (min-height: 501px) {
   .pizza {
-    width: 425px;
-    height: 425px;
+    width: 350px;
+    height: 350px;
   }
 }
 
