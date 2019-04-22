@@ -9,7 +9,7 @@ import OrderSummary from '../../components/Pizza/OrderSummary/OrderSummary';
 import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
-import * as actionTypes from '../../actions/types';
+import * as pizzaBuilderActions from '../../actions/index';
 
 class PizzaBuilder extends Component {
   state = {
@@ -108,9 +108,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     onIngredientAdded: ingName =>
-      dispatch({ type: actionTypes.ADD_INGREDIENT, ingredientName: ingName }),
+      dispatch(pizzaBuilderActions.addIngredient(ingName)),
     onIngredientRemoved: ingName =>
-      dispatch({ type: actionTypes.REMOVE_INGREDIENT, ingredientName: ingName })
+      dispatch(pizzaBuilderActions.removeIngredient(ingName))
   };
 };
 
