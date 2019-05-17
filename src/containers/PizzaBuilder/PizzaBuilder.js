@@ -1,32 +1,23 @@
 import React, { Component } from 'react';
-
+import axios from '../../axios-orders';
 import { connect } from 'react-redux';
 import Aux from '../../hoc/Auxil/Auxil';
 import Pizza from '../../components/Pizza/Pizza';
 import BuildControls from '../../components/Pizza/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Pizza/OrderSummary/OrderSummary';
-import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
-import * as pizzaBuilderActions from '../../actions/index';
+import * as actions from '../../actions/index';
 
 class PizzaBuilder extends Component {
   state = {
     purchaseable: false,
-    purchasing: false,
-    loading: false
+    purchasing: false
   };
 
   componentDidMount() {
-    // axios
-    //   .get('https://pizza-builder-app.firebaseio.com/ingredients.json')
-    //   .then(response => {
-    //     this.setState({ ingredients: response.data });
-    //   })
-    //   .catch(error => {
-    //     this.setState({ error: true });
-    //   });
+    this.props.onInitIngredients();
   }
 
   updatePurchaseState(ingredients) {
@@ -49,6 +40,7 @@ class PizzaBuilder extends Component {
   };
 
   purchaseContinueHandler = () => {
+    this.props.onInitPurchase();
     this.props.history.push('/checkout');
   };
   render() {
@@ -56,7 +48,7 @@ class PizzaBuilder extends Component {
     if (this.state.loading) {
       orderSummary = <Spinner />;
     }
-    let pizza = this.state.error ? (
+    let pizza = this.props.error ? (
       <p>Ingredients can't be loaded</p>
     ) : (
       <Spinner />
@@ -83,9 +75,6 @@ class PizzaBuilder extends Component {
         />
       );
     }
-    if (this.state.loading) {
-      orderSummary = <Spinner />;
-    }
     return (
       <Aux>
         <Modal
@@ -101,16 +90,17 @@ class PizzaBuilder extends Component {
 
 const mapStateToProps = state => {
   return {
-    ings: state.ingredients,
-    price: state.totalPrice
+    ings: state.pizzaBuilder.ingredients,
+    price: state.pizzaBuilder.totalPrice,
+    error: state.pizzaBuilder.error
   };
 };
 const mapDispatchToProps = dispatch => {
   return {
-    onIngredientAdded: ingName =>
-      dispatch(pizzaBuilderActions.addIngredient(ingName)),
-    onIngredientRemoved: ingName =>
-      dispatch(pizzaBuilderActions.removeIngredient(ingName))
+    onIngredientAdded: ingName => dispatch(actions.addIngredient(ingName)),
+    onIngredientRemoved: ingName => dispatch(actions.removeIngredient(ingName)),
+    onInitIngredients: () => dispatch(actions.initIngredients()),
+    onInitPurchase: () => dispatch(actions.purchaseInit())
   };
 };
 
